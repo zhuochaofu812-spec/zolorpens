@@ -1,0 +1,26 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#050505"/>
+  <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1110 474) rotate(122) scale(460 760)">
+    <stop stop-color="#D7B56D" stop-opacity="0.62"/>
+    <stop offset="0.44" stop-color="#A57B33" stop-opacity="0.18"/>
+    <stop offset="1" stop-color="#050505" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <g opacity="0.62" filter="url(#blur)">
+    <path d="M370 654 C760 500 1110 458 1570 330" stroke="url(#gold)" stroke-width="28" stroke-linecap="round"/>
+    <path d="M470 682 C850 540 1132 500 1440 405" stroke="#0B0B0B" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <linearGradient id="gold" x1="355" y1="650" x2="1580" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080808"/>
+      <stop offset="0.22" stop-color="#262626"/>
+      <stop offset="0.44" stop-color="#D7B56D"/>
+      <stop offset="0.54" stop-color="#FFF0B6"/>
+      <stop offset="0.68" stop-color="#7A5520"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <filter id="blur" x="300" y="250" width="1340" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+</svg>

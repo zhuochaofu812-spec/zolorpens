@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Cormorant Garamond";
+  --font-sans: "Inter";
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #050505;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(215, 181, 109, 0.16), transparent 34rem),
+    radial-gradient(circle at 90% 18%, rgba(165, 123, 51, 0.14), transparent 28rem),
+    #050505;
+  color: #f8f3e8;
+}
+
+
+@keyframes shimmer {
+  0% {
+    background-position: -220% 0;
+  }
+  100% {
+    background-position: 220% 0;
+  }
+}
+
+::selection {
+  background: rgba(215, 181, 109, 0.38);
+  color: #fff8df;
+}
+
+.luxury-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.hero-video-fallback {
+  background:
+    linear-gradient(115deg, rgba(5, 5, 5, 0.95), rgba(31, 24, 12, 0.8), rgba(5, 5, 5, 0.96)),
+    radial-gradient(circle at 65% 42%, rgba(215, 181, 109, 0.46), transparent 18rem),
+    linear-gradient(90deg, transparent 0 8%, rgba(255, 232, 166, 0.08) 10%, transparent 12% 100%);
+  background-size: 100% 100%, 100% 100%, 220% 100%;
+  animation: shimmer 8s linear infinite;
+}
+
+.gold-text {
+  background: linear-gradient(110deg, #8f6623 0%, #f7e1a0 22%, #b78631 48%, #fff5c8 70%, #8f6623 100%);
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 7s linear infinite;
+}
+
+.product-card {
+  transform-style: preserve-3d;
+  transition: transform 500ms ease, border-color 500ms ease, background 500ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-12px) rotateX(3deg) rotateY(-4deg);
+}
+
+.pen-body {
+  background:
+    linear-gradient(90deg, transparent 0 8%, rgba(255,255,255,0.22) 12%, transparent 17% 100%),
+    linear-gradient(90deg, #050505, #242424 18%, #080808 36%, #cda95b 42%, #f5dc98 48%, #7f581e 54%, #090909 62%, #252525 82%, #040404);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.55), 0 0 45px rgba(215, 181, 109, 0.24);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
